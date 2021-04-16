@@ -1,4 +1,6 @@
-
+* {
+	scroll-behavior: smooth;
+}
 
 body {
 	margin: 0;
@@ -25,12 +27,13 @@ body {
 
 #menubar a:hover {
 	text-decoration: underline;
+	background: rgb(83, 76, 76);
+	border-radius: 10px;
 }
 
 #menubar a:last-child {
 	margin: 0;
 }
-
 
 .section {
 	height: 100vh;
@@ -40,6 +43,7 @@ body {
 	font-weight: 700;
 	color: white;
 }
+
 
 #section-1 {
 	background-color: #1abc9c;
@@ -64,4 +68,16 @@ body {
 	background-color: blue;
 }
 
+div a {
+display: block;
+padding: 10px 8px;
+color: rgb(250, 244, 244);
+text-decoration: none;
+}
+
+div a.current {
+background: rgb(83, 76, 76);
+border-radius: 10px;
+transition: all 0.5s;
+}
 
